@@ -1,5 +1,5 @@
 import React from "react";
-import moment from "moment/moment";
+
 
 const VideoLength = ({ time }) => {
   const videoLengthInSeconds = moment()

@@ -32,7 +32,7 @@ export const AppContext = ({ children }) => {
         setMobileMenu,
         selectedCatagory,
         setSelectedCatagory,
-        video
+        
       }}
     >
       {children}
