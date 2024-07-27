@@ -19,9 +19,6 @@ const Sidebar = () => {
       >
         <FiMenu style={{fontSize: '1.5rem', color: "#fff"}}/>
       </IconButton>
-      <Link to='/'>
-        <img src={logo} alt="logo" style={{scale: '.3'}} />
-      </Link>
      
       <Drawer
         anchor='left'
@@ -33,13 +30,11 @@ const Sidebar = () => {
           
           
           <IconButton onClick={toggleMenu}
-            style={{margin: '1rem'}}
+            style={{margin: '1.3rem'}}
           >
-            <FiMenu style={{fontSize: '1.5rem', color: "#fff", }}/>
+            <FiMenu style={{fontSize: '1.5rem', color: "#fff"}}/>
           </IconButton>
-          <Link to='/'>
-        <img src={logo} alt="logo" style={{}} />
-      </Link>
+          
           <List
             sx={{width: '100%', maxWidth: '15rem'}}
             component="nav"
