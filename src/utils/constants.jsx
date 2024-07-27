@@ -7,7 +7,11 @@ import { MdHomeFilled,
         MdThumbDownOffAlt,
         MdThumbUpAlt,
         MdThumbUpOffAlt,
-
+        MdSubscriptions,
+        MdWatchLater,
+        MdMusicVideo,
+        
+        
        
         } from "react-icons/md";
 
@@ -20,17 +24,17 @@ import { RiLightbulbLine, RiFeedbackLine } from "react-icons/ri"
 export const categories = [
   
   { name: "Home", icon: <MdHomeFilled />, type: "main_catagory", url: "home" },
-  { name: "Shorts", icon: <MdLocalFireDepartment />, type: "main_category", url: "shorts/info" },
+  { name: "Shorts", icon: <MdMusicVideo />, type: "main_category", url: "shorts/info" },
   {
     name: "Subscription",
-    icon: <MdMusicNote />,
+    icon: <MdSubscriptions />,
     type: "user_category",
     divider: true,
   },
   { name: "Your Channel", icon: <FiFilm />, type: "category" },
   { name: "History", icon: <MdLiveTv />, type: "user_category" },
   
-  { name: "Watch later", icon: <MdNewspaper />, type: "user_category" , divider: true },
+  { name: "Watch later", icon: <MdWatchLater />, type: "user_category" , divider: true },
   
   
   { name: "Learning", icon: <RiLightbulbLine />, type: "category" },

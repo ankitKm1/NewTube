@@ -1,8 +1,8 @@
 import { Outlet, RouterProvider, createBrowserRouter, useRouteError } from "react-router-dom"
-import { AppContext } from "./context/ContextApi"
-import VideoPlayer from "./pages/VideoPlayer"
+
+import Navbar from "./components/Navbar";
 import Feed from "./pages/Feed";
-import NavBar from "./component/NavBar"
+import { AppContext } from "./context/ContextApi";
 const ErrorPage = () => {
   const error= useRouteError();
   console.log(error)
@@ -22,7 +22,7 @@ const Layout= ()=> {
   
   return(
     <div>
-      <NavBar />
+      <Navbar />
       <Outlet />
     </div>
   )
@@ -35,7 +35,7 @@ const router= createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {path: "/", element: <Feed />},
-      {path: "/videos/:id", element: <VideoPlayer />}
+
     ]
   }
 ])

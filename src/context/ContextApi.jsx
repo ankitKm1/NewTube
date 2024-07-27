@@ -1,14 +1,12 @@
-/* eslint-disable react/prop-types */
-import { createContext, useState, useEffect } from "react";
-import { fetchFromApi } from "../utils/api";
-import { videoDummyData } from "../utils/dummyData";
-export const Context = createContext();
+import { createContext, useState } from "react";
+
+export const Context = createContext()
 
 export const AppContext = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [selectedCatagory, setSelectedCatagory]= useState("New")
   
-  const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(true);
   
 
   // const fetchByCatagory= async(url)=> {
@@ -39,3 +37,4 @@ export const AppContext = ({ children }) => {
     </Context.Provider>
   );
 };
+
